@@ -17,6 +17,7 @@ npm install or yarn install
 3. Set up environment variables:
 
 NEXT_PUBLIC_CLERK_FRONTEND_API=<your-clerk-frontend-api>
+
 CLERK_API_KEY=<your-clerk-api-key>
 
 Replace <your-clerk-frontend-api> and <your-clerk-api-key> with the keys from your Clerk account.
