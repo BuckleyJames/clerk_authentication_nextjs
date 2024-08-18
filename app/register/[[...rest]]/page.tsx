@@ -7,8 +7,8 @@ export const metadata = {
 
 export default function RegisterPage() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-100">
-      <main className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+    <div className="flex h-screen items-center justify-center ">
+      <main className="p-8 rounded-lg  w-full max-w-md">
         <SignUp />
       </main>
     </div>

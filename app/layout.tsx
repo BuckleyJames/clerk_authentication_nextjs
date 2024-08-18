@@ -1,5 +1,6 @@
-import { ClerkProvider, SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs';
+import { ClerkProvider, SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
 import { ReactNode } from 'react';
+import '../app/globals.css';
 
 interface RootLayoutProps {
   children: ReactNode;
@@ -13,16 +14,23 @@ export const metadata = {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body>
+      <body className=" text-gray-900 antialiased h-screen grid place-items-center">
         <ClerkProvider>
-          <header>
-            <SignedOut>
-            </SignedOut>
-            <SignedIn>
-              <UserButton />
-            </SignedIn>
-          </header>
-          <main>{children}</main>
+          <div className="w-full max-w-md">
+            <header className="mb-4">
+              <nav className="flex justify-center">
+                <SignedOut>
+                  {/* Optional: Add content for signed out users */}
+                </SignedOut>
+                <SignedIn>
+                  <UserButton />
+                </SignedIn>
+              </nav>
+            </header>
+            <main className="">
+              {children}
+            </main>
+          </div>
         </ClerkProvider>
       </body>
     </html>
