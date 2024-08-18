@@ -3,26 +3,27 @@ Simple implementation of authentication for Next.js with Clerk for register, log
 
 Prerequisites:
 
-Node.js (version 14 or higher)
-npm or yarn
-Clerk account
+- Node.js (version 14 or higher)
+- npm or yarn
+- Clerk account
 
 
 1. Clone the Repository
 
 2. Install Dependencies:
 
-npm install or yarn install
+- npm install or yarn install
 
 3. Set up environment variables:
 
-NEXT_PUBLIC_CLERK_FRONTEND_API=<your-clerk-frontend-api>
-CLERK_API_KEY=<your-clerk-api-key>
+- NEXT_PUBLIC_CLERK_FRONTEND_API="your-clerk-frontend-api"
 
-Replace <your-clerk-frontend-api> and <your-clerk-api-key> with the keys from your Clerk account.
+- CLERK_API_KEY="your-clerk-api-key"
+
+- Replace with the keys from your Clerk account.
 
 4. Run the application:
 
-npm run dev or yarn dev
+- npm run dev or yarn dev
 
 
